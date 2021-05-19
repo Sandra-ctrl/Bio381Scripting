@@ -1,0 +1,155 @@
+---
+title: "my first markdown document"
+author: "Sandra Nnadi"
+date: "2/16/2021"
+output:
+  html_document: 
+    theme: cerulean
+  pdf_document: default
+---
+
+add text here just use it like a typewriter. and add as much and as little as you like.
+
+new text appears here in a separate paragraph
+
+Sandra Nnadi   
+Plant Biology Department   
+University of Vermont  
+
+use 2 or more blank spaces at the end of a single spaced line.
+
+# First level header
+
+## Second level header
+
+### Third level header
+
+# Basic text formatting
+
+italic *text* like this
+
+bold **text** like this
+
+subscript~text~ like this
+
+superscript^text^ like this
+
+strikethrough ~~text~~ like this
+
+# Lists
+
+## unordered lists
+
+* Item 1
+* Item 2
+    + Item 2a
+    + Item 2b
+    
+## ordered lists
+
+1. Item 1
+2. Item 2
+3. Item 3
+    + Item 3a
+    + Item 3b
+    
+# Fencing
+
+in line fencing with a backtick `to show anything in plain text with *no* formatting` which can be useful for many things
+
+in line execution of r code inside the backtick by inserting r as the first element `r 3 +pi`
+
+in line execution of r code inside the backtick by inserting r as the first element ` 3 +pi`
+
+3 backticks for a whole section of plain text
+
+```
+everything in here is in plain text, even single lines.
+
+useful especially when showing other coding instructions.
+```
+
+# Block quotes with `>`
+
+> to be or not to be, that is the question. whether it is nobler.
+
+# Spacer line with 3 or more underscores
+
+___
+
+adds a line between the text
+
+# Links
+http://example.com
+
+[linked phrase](http://example.com)
+
+# Images
+
+![alt text](http://example.com/logo.png)
+
+`![alt text](figures/img.png)`
+
+# Table
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | *formatted text*
+
+# LaTex code for equations
+
+we set off equations with `$` for brackets
+
+## Inline equations
+
+these equations such as $a = 3 + 4$ will appear inside a single line of text.
+
+these equations such as $$a = 3 + 4$$ will appear in a separate line of their own.
+
+## Subscripts
+
+$$H_0 = Z_{a + b}$$
+
+## Superscripts
+
+$$S = cA^z$$
+
+elements can be coupled and nested
+
+$$S=cA^z_1 + z_{2 + x}$$
+
+## fractions and Greek symbols
+
+$$\alpha = \frac{\beta}{\delta + \gamma_x}$$
+
+## Summation signs
+
+$$z= \sum_{i=1}^X{K}$$
+
+## Escape the backslash with a custom term
+
+$$\backslash \alpha \le b \backslash$$
+
+## rendering plaintext in a LaTex equation
+
+$$P{Occurence of Species A} = Z$$
+
+$$P(\mbox{Ocurrence of Species A}) = Z$$
+
+```{r,echo=TRUE,eval=TRUE}
+# don't forget to start with comments
+# preliminaries
+library(ggplot2)
+
+pred <- 1:10 # vector of 10 integers
+res <- runif(10) # random uniform values
+
+# print the random numbers
+print(res)
+
+# plot the graph
+qplot(x=pred,y=res)
+
+```
+
+now back to writing text in our markdown document, including LaTex equations if we need them such as $a + b$ inserted in the middle of my sentence

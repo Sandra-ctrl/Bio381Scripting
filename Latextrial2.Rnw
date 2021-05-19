@@ -1,0 +1,8 @@
+\documentclass{article}
+
+\begin{document}
+
+Fortunately, most of what you do for writing in \LaTex actually follows the rules for plain text!
+
+
+\end{document}

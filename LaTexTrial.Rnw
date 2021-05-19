@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\begin{document}
+
+% In LaTex, the % sign is the comment character, not the # sign in R or in Shell scripts
+
+% remove the asterisks for numbered titles
+
+\section{main title}
+
+\subsection{second level title}
+
+\subsubsection{third level title}
+
+Here is \textbf{bold face}.\\
+Here is \textit{italic font}.\\
+Here is \texttt{plain text}.
+
+
+``use two back ticks to start a quotation and two single quotes to end a quotation''.
+
+\begin{itemize}
+ \item first bullet point
+ \item second bullet point
+ \item third bullet point
+\end{itemize}
+
+\begin{enumerate}
+ \item first point
+ \item second point
+ \item third point
+\end{enumerate}
+
+Fortunately, most of what you do for writing in \LaTex actually follows the rules for plain text
+
+\begin{verbatim}
+Text here is literal. with no formatting signs
+careful, there is also no margin control!
+\end{verbatim}
+
+
+\begin{quote}
+This indents an entire paragraph for an extended quotations
+\end{quote}
+
+<<echo=TRUE>>=
+x <- runif(10)
+y <- runif(10)
+# comments as always with a hashtag
+print(x)
+plot(x,y)
+@
+
+
+\end{document}
